@@ -10,7 +10,6 @@ customer.firstName = "Mike";
 
 //Bracket Notation
 customer['lastName'] = "Silver";
-
 console.log(`${customer.firstName} ${customer.lastName}`);
 
 //Arrays
