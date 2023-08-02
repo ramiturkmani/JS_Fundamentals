@@ -1,6 +1,6 @@
 // Declarative function
 function helloOne(){
-    console.log('Hello one!');
+    console.log('Hello One!');
 }
 helloOne();
 
@@ -31,3 +31,11 @@ function multiplyByTwo(number){
 
 let myResult = multiplyByTwo(20);
 console.log(myResult);
+
+//Import function
+import { printAge } from '../helpers/printHelper.js'
+printAge(5);
+
+//Import everything
+import * as helper from '../helpers/printHelper.js'
+helper.printAge(10);
