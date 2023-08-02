@@ -2,12 +2,18 @@ export function printAge(age) {
     console.log(age);
 }
 
-export class CustomerDetails {
+class CustomerDetails {
     printFirstName(firstName){
         console.log(firstName);
     }
 
-    printFirstName(lastName){
+    /**
+     * This method will print the last name
+     * @param {*} lastName 
+     */
+    printLastName(lastName){
         console.log(lastName);
     }
 }
+
+export const customerDetails = new CustomerDetails();
