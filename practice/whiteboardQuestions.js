@@ -32,3 +32,10 @@ for (let i = 0; i < array1.length; i++) {
 }
 
 console.log(newArray1);
+
+//Multiply every array element by 3
+let array2 = [1, 2, 3, 4];
+
+let newArray2 = array2.map(x => x * 3);
+
+console.log(newArray2);
