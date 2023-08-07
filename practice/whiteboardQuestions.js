@@ -20,3 +20,15 @@ string1Arr.forEach(word => {
 })
 
 console.log(string2Reversed);
+
+//Remove duplicates from an array
+let array1 = [1, 1, 2, 2, 2, 3, 4, 4]; //Expected: [1, 2, 3, 4]
+let newArray1 = [];
+
+for (let i = 0; i < array1.length; i++) {
+    if (!newArray1.includes(array1[i])) {
+        newArray1.push(array1[i]);
+    }
+}
+
+console.log(newArray1);
