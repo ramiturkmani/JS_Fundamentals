@@ -38,3 +38,13 @@ let array2 = [1, 2, 3, 4];
 let newArray2 = array2.map(x => x * 3);
 
 console.log(newArray2);
+
+//Write code to convert an array of strings to an array of the lengths of those strings.
+let array3 = ["Orange", "Apple", "Banana", "Kiwi"]; //Expected: [6, 5, 6, 4]
+let array3Lengths = [];
+
+for (let i = 0; i < array3.length; i++) {
+    array3Lengths[i] = array3[i].length;
+}
+
+console.log(array3Lengths);
