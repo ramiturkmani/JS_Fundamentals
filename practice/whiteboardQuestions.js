@@ -10,8 +10,8 @@ console.log(string1Reversed);
 
 //Reverse every word in a string
 let string2Reversed = "";
-
 let string1Arr = string1.split(" ");
+
 string1Arr.forEach(word => {
     for(let i = word.length; i >= 0; i--){
         string2Reversed += word.charAt(i);
@@ -35,7 +35,6 @@ console.log(newArray1);
 
 //Multiply every array element by 3
 let array2 = [1, 2, 3, 4];
-
 let newArray2 = array2.map(x => x * 3);
 
 console.log(newArray2);
