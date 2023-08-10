@@ -63,3 +63,13 @@ numArray.forEach(num => {
 });
 
 console.log(numArraySum);
+
+
+//Write a function that can be called like so: greeter(“Hello”)(“Candidate”) and will log “Hello, Candidate!” to the console
+function greeter(greeting) {
+    return function (greetee) {
+        console.log(`${greeting}, ${greetee}!`);
+    }
+};
+
+greeter("Hello")("Candidate");
