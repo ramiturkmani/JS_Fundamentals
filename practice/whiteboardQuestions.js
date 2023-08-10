@@ -1,4 +1,5 @@
 //Reverse a string
+//First way
 let string1 = "Hello World!";
 let string1Reversed = "";
 
@@ -7,6 +8,13 @@ for(let i = string1.length; i >= 0; i--){
 }
 
 console.log(string1Reversed);
+
+//Second way
+function reverseString(str) {
+    console.log(str.split("").reverse().join(""));
+}
+
+reverseString("apple");
 
 
 //Reverse every word in a string
