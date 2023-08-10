@@ -8,6 +8,7 @@ for(let i = string1.length; i >= 0; i--){
 
 console.log(string1Reversed);
 
+
 //Reverse every word in a string
 let string2Reversed = "";
 let string1Arr = string1.split(" ");
@@ -21,6 +22,7 @@ string1Arr.forEach(word => {
 
 console.log(string2Reversed);
 
+
 //Remove duplicates from an array
 let array1 = [1, 1, 2, 2, 2, 3, 4, 4]; //Expected: [1, 2, 3, 4]
 let newArray1 = [];
@@ -33,11 +35,13 @@ for (let i = 0; i < array1.length; i++) {
 
 console.log(newArray1);
 
+
 //Multiply every array element by 3
 let array2 = [1, 2, 3, 4];
 let newArray2 = array2.map(x => x * 3);
 
 console.log(newArray2);
+
 
 //Write code to convert an array of strings to an array of the lengths of those strings.
 let array3 = ["Orange", "Apple", "Banana", "Kiwi"]; //Expected: [6, 5, 6, 4]
