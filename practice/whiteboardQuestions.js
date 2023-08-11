@@ -86,3 +86,12 @@ greeter("Hello")("Candidate");
 //Sort an array
 console.log(numArray.sort());
 console.log(array3.sort());
+
+
+//Fill in the blanks in the months array
+const months = ["Jan", "March", "April", "June"];
+
+months.splice(1, 0, "Feb");
+months.splice(4, 0, "May");
+
+console.log(months);
