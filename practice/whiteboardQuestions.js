@@ -63,7 +63,7 @@ console.log(array3Lengths);
 
 
 //Write code to sum an array of numbers
-let numArray = [1, 3, 4, 7]; //Expected: 15
+let numArray = [4, 3, 7, 1]; //Expected: 15
 let numArraySum = 0;
 
 numArray.forEach(num => {
@@ -81,3 +81,8 @@ function greeter(greeting) {
 };
 
 greeter("Hello")("Candidate");
+
+
+//Sort an array
+console.log(numArray.sort());
+console.log(array3.sort());
