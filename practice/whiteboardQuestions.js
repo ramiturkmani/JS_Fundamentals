@@ -95,3 +95,14 @@ months.splice(1, 0, "Feb");
 months.splice(4, 0, "May");
 
 console.log(months);
+
+
+//Edit all elements within an array of number to only have 2 decimal places
+let numArray2 = [1.2345, 1.4, 1.54325, 1.87, 1.952];
+let numArray2Fixed = [];
+
+for (let i = 0; i < numArray2.length; i++) {
+    numArray2Fixed[i] = Number(numArray2[i].toFixed(2));
+};
+
+console.log(numArray2Fixed);
