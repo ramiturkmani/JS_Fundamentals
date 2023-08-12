@@ -106,3 +106,13 @@ for (let i = 0; i < numArray2.length; i++) {
 };
 
 console.log(numArray2Fixed);
+
+
+//Set every element in an array with an even index to be upper case
+for (let i = 0; i < months.length; i++) {
+    if (i%2 == 0) {
+        months[i] = months[i].toUpperCase();    
+    }
+};
+
+console.log(months);
