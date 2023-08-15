@@ -116,3 +116,9 @@ for (let i = 0; i < months.length; i++) {
 };
 
 console.log(months);
+
+
+//Retrieve the length of each element in an array
+let elementLengths = months.map(element => element.length);
+
+console.log(elementLengths);
