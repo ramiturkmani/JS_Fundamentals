@@ -122,3 +122,10 @@ console.log(months);
 let elementLengths = months.map(element => element.length);
 
 console.log(elementLengths);
+
+//Write a function name noEmtpy() which ensures that there are no empty elements within an array
+function noEmpty(arr) {
+    return !arr.includes();
+}
+
+console.log(noEmpty(["foo", "bar", "foobar"])); //true
