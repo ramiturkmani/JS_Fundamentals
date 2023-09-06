@@ -131,6 +131,7 @@ function noEmpty(arr) {
 
 console.log(noEmpty(["foo", "bar", "foobar"])); //true
 
+
 //Write a function which takes two numbers and returns the count of the numbers between the start and end number that are divisible by 5 
 function countFiveDividend(num1, num2){
     let big = 0;
