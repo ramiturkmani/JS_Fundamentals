@@ -155,3 +155,4 @@ function countFiveDividend(num1, num2){
     return(count);
 }
 console.log(countFiveDividend(12,28));
+
