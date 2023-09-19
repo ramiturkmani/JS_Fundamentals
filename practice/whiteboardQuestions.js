@@ -156,6 +156,7 @@ function countFiveDividend(num1, num2) {
 }
 console.log(countFiveDividend(12, 28));
 
+
 // Create an array to store values that have been parsed over at least once in a loop; "uniques array"
 var uniqueArr = [];
 function removeDuplicates(arr) {
