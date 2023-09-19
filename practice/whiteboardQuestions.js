@@ -3,7 +3,7 @@
 let string1 = "Hello World!";
 let string1Reversed = "";
 
-for(let i = string1.length; i >= 0; i--){
+for (let i = string1.length; i >= 0; i--) {
     string1Reversed += string1.charAt(i);
 }
 
@@ -22,7 +22,7 @@ let string2Reversed = "";
 let string1Arr = string1.split(" ");
 
 string1Arr.forEach(word => {
-    for(let i = word.length; i >= 0; i--){
+    for (let i = word.length; i >= 0; i--) {
         string2Reversed += word.charAt(i);
     }
     string2Reversed += " ";
@@ -110,8 +110,8 @@ console.log(numArray2Fixed);
 
 //Set every element in an array with an even index to be upper case
 for (let i = 0; i < months.length; i++) {
-    if (i%2 == 0) {
-        months[i] = months[i].toUpperCase();    
+    if (i % 2 == 0) {
+        months[i] = months[i].toUpperCase();
     }
 };
 
@@ -133,25 +133,37 @@ console.log(noEmpty(["foo", "bar", "foobar"])); //true
 
 
 //Write a function which takes two numbers and returns the count of the numbers between the start and end number that are divisible by 5 
-function countFiveDividend(num1, num2){
+function countFiveDividend(num1, num2) {
     let big = 0;
     let small = 0;
     let count = 0;
-    
-    if(num1 >= num2){
-      big = num1;
-      small = num2;
+
+    if (num1 >= num2) {
+        big = num1;
+        small = num2;
     } else {
-      big = num2;
-      small = num1;
+        big = num2;
+        small = num1;
     }
 
-    for(let i = small; i <= big; i++){
+    for (let i = small; i <= big; i++) {
         let str = i.toString();
-      if(str.charAt(str.length - 1) == 0 || str.charAt(str.length - 1) == 5) {
-        count ++;
-      }
+        if (str.charAt(str.length - 1) == 0 || str.charAt(str.length - 1) == 5) {
+            count++;
+        }
     }
-    return(count);
+    return (count);
 }
-console.log(countFiveDividend(12,28));
+console.log(countFiveDividend(12, 28));
+
+// Create an array to store values that have been parsed over at least once in a loop; "uniques array"
+var uniqueArr = [];
+function removeDuplicates(arr) {
+    return arr.filter(function (element, index) {
+        if (uniqueArr.indexOf(element) == -1) {
+            uniqueArr.push(element);
+            return element;
+        }
+    });
+}
+console.log(removeDuplicates(["tech", "tech", true, false, true, 2, 2, 3, -1, 7, 7]));
