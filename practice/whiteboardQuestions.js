@@ -168,3 +168,4 @@ function removeDuplicates(arr) {
     });
 }
 console.log(removeDuplicates(["tech", "tech", true, false, true, 2, 2, 3, -1, 7, 7]));
+
